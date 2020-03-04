@@ -1,5 +1,29 @@
-{{!-- The following component displays Ember's default welcome message. --}}
-<WelcomePage />
-{{!-- Feel free to remove this! --}}
+<nav class="navbar navbar-expand-lg bg-danger text-uppercase fixed-top" id="mainNav">
+  <div class="container">
+    <LinkTo @route="application" class="navbar-brand" href="./">
+      Little Giants Hangman
+    </LinkTo>
+    <button class="navbar-toggler navbar-toggler-right text-uppercase font-weight-bold bg-primary text-white rounded"
+      type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive"
+      aria-expanded="false" aria-label="Toggle 
+      navigation" {{action "toggleNavigation"}}>
+      Menu
+      <i class="fas fa-bars"></i>
+    </button>
+    <div class="collapse navbar-collapse {{ if isNavCollapsed 'show' }}" id="navbarResponsive">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item mx-0 mx-lg-1 dropdown">
+          <LinkTo @route="digital-clock" class="dropdown-item">Clock</LinkTo>
+        </li>
+        <li class="nav-item mx-0 mx-lg-1 dropdown">
+          <LinkTo @route="tip" class="dropdown-item">Tip Calculator</LinkTo>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+
 
 {{outlet}}
