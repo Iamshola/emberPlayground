@@ -20,9 +20,6 @@ export default class DigitalClockController extends Controller {
 }
 
 
-  // setInterval(getTime, duration)
-
-
 }
 
 

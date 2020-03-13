@@ -1,4 +1,7 @@
-
+.body-container{
+   height: 100vh; 
+   margin: 100px 70px;
+}
 .tip-container{
     width: 400px;
     margin: 100px 480px;

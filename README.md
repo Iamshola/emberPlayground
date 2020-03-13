@@ -3,8 +3,12 @@
 This README outlines the details of collaborating on this Ember application.
 A short introduction of this app could easily go here.
 
-Ember TipCalculator
-Ember Digital Clock 
+* Ember TipCalculator
+* Ember Digital Clock 
+* TO DO List 
+  * Ember ToDo List
+  * Basic Api Call with filter functionality 
+  * Maths Calculator 
 
 ## Prerequisites
 
