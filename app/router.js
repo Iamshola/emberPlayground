@@ -10,4 +10,5 @@ Router.map(function() {
   this.route('tip');
   this.route('digital-clock');
   this.route('basic-calculator');
+  this.route('countdown-timer');
 });

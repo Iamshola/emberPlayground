@@ -1,0 +1,17 @@
+<div class="digital-clock-container">
+  <div class="stop-watch">
+    {{#if isNotClicked}}
+    <input class="inputVal" placeholder="Set Timer" onchange={{action (mut hour) value='target.value'}} />
+    <button type="button" class="btn btn-light btn-lg" {{action "calculateAmount" }} id="timer">Start Your Timer!</button>
+
+
+    {{else}}
+
+    <button type="button" class="btn btn-light btn-lg" {{action "pause" }}>Pause it!</button>
+    <div id="hour" class="each-board">{{hour}}</div>
+    {{/if}}
+  </div>
+
+</div>
+
+{{outlet}}
